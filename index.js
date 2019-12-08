@@ -21,4 +21,4 @@ for (let key in otherPoints) {
 
 console.log(`Basepoint X: ${basePoint.x}, Basepoint Y: ${basePoint.y}`);
 mapper.maxMin(distances); //get the maximum and the minimum distance of all the objects
-//console.log(distances);
+console.log(distances);
