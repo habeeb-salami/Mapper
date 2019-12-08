@@ -1,8 +1,8 @@
 class Mapper {
-  constructor() {
-    this.shortestDist;
-    this.longestDist;
-  }
+  // constructor() {
+  //   this.shortestDist;
+  //   this.longestDist;
+  // }
 
   distance(obj1, obj2) {
     let vx = obj1.x - obj2.x;
@@ -13,22 +13,22 @@ class Mapper {
   random() {
     return Math.random() * 100; //between 1 and 100;
   }
-  maxMin(distances) {
-    this.min = distances[1];
-    this.max = distances[1];
-    for (let i in distances) {
-      if (distances[i] >= this.max) {
-        //for catching the maximum number
-        this.max = distances[i];
+  maxMin(otherPoints) {
+    this.min = otherPoints[1].distance;
+    this.max = otherPoints[1].distance;
+    for (let i in otherPoints) {
+      if (otherPoints[i].distance >= this.max) { //if distance of otherpoitn object is greater than the know max then
+        this.max = otherPoints[i].distance; //assign to the maximum value the found distance
       }
-      if (distances[i] <= this.min) {
-        //for catching the maximum number
-        this.min = distances[i];
+      if (otherPoints[i].distance <= this.min) { //if the distance in this otherpoitnis less than the know min then
+        this.min = otherPoints[i].distance; //assign to the min value the new found min distance
       }
     }
-    this.shortestDist = this.min;
-    this.longestDist = this.max;
     console.log(`Final Shortest Distance: ${this.min}, Final Longest Distance: ${this.max}`);
+    return {
+      min: this.min,
+      max: this.max
+    };
   }
 }
 module.exports = Mapper;
