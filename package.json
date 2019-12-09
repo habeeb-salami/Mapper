@@ -1,0 +1,15 @@
+{
+  "name": "mapper",
+  "version": "1.0.0",
+  "description": "Shortest Distance Mapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc"
+  },
+  "keywords": [
+    "distance-calculator",
+    "shortest-distance-calculator"
+  ],
+  "author": "Habeeb Salami",
+  "license": "ISC"
+}
