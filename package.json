@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "Shortest Distance Mapper",
   "main": "index.js",
+  "main": "server",
   "scripts": {
-    "test": "tsc"
+    "test": "mocha --recursive --exit"
   },
   "keywords": [
     "distance-calculator",
     "shortest-distance-calculator"
   ],
   "author": "Habeeb Salami",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2"
+  }
 }
