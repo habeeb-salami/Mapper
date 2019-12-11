@@ -2,8 +2,7 @@
   "name": "mapper",
   "version": "1.0.0",
   "description": "Shortest Distance Mapper",
-  "main": "index.js",
-  "main": "server",
+  "main": "index",
   "scripts": {
     "test": "mocha --recursive --exit"
   },
@@ -13,9 +12,9 @@
   ],
   "author": "Habeeb Salami",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
     "mocha": "^6.2.2"
   }
 }
