@@ -17,11 +17,9 @@ describe('Map out shortest and longest distance', function() {
 		for (let key in otherPoints) {
 		  otherPoints[key].distance = mapper.distance(basePoint, otherPoints[key]);
 		}
-		//console.log(`Basepoint X: ${basePoint.x}, Basepoint Y: ${basePoint.y}`);
-		const minMax = mapper.maxMin(otherPoints); //get the maximum and the minimum distance of all the objects
-		//console.log(minMax);
-      assert.property(minMax, 'min')
-	  //assert.property(minMax,'max');
+		const minMax = mapper.maxMin(otherPoints); //get the maximum and the minimum distance of all the objects	
+		assert.property(minMax, 'min')
+	 
     });
   });
 });
