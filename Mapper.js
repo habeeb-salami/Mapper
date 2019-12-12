@@ -23,7 +23,7 @@ class Mapper {
         this.min = otherPoints[i].distance; //assign to the min value the new found min distance
       }
     }
-    console.log(`Final Shortest Distance: ${this.min}, Final Longest Distance: ${this.max}`);
+   // console.log(`Final Shortest Distance: ${this.min}, Final Longest Distance: ${this.max}`);
     return {
       min: this.min,
       max: this.max
