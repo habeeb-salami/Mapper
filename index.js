@@ -3,17 +3,25 @@ const Entity = require("./Entity");
 
 let mapper = new Mapper(); //instantiate mapper
 let basePoint = new Entity(mapper.random(), mapper.random()); //for the base point
-let otherPoints = {}; //for the list of other location of interest
+//let otherPoints = {}; //for the list of other location of interest
 //populate the Entities list with random coordinates
-for (x = 1; x <= 1000; ++x) {
-  //for 100 Entities
-  otherPoints[x] = new Entity(mapper.random(), mapper.random());
-}
+// for (x = 1; x <= 1000; ++x) {
+//   //for 100 Entities
+//   otherPoints[x] = new Entity(mapper.random(), mapper.random());
+// }
+let otherPoints = [new Entity(200, 120), new Entity(230, 170),
+  new Entity(50, 20), new Entity(120, 144),
+  new Entity(200, 120)
+];
 
 //Calculate Distance
 for (let key in otherPoints) {
   otherPoints[key].distance = mapper.distance(basePoint, otherPoints[key]);
 }
+// otherPoints[key].distance = otherPoints.map(key => {
+//   mapper.distance(basePoint, otherPoints[key]);
+// });
+
 
 //show the list of the coordinates
 for (let key in otherPoints) {
