@@ -4,7 +4,7 @@
   "description": "Shortest Distance Mapper",
   "main": "index",
   "scripts": {
-    "test": "mocha --recursive --exit"
+    "test": "mocha"
   },
   "keywords": [
     "distance-calculator",
