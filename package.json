@@ -2,14 +2,29 @@
   "name": "mapper",
   "version": "1.0.0",
   "description": "Shortest Distance Mapper",
+<<<<<<< HEAD
   "main": "index.js",
   "scripts": {
     "test": "tsc"
+=======
+  "main": "index",
+  "scripts": {
+    "test": "mocha"
+>>>>>>> c5ebc973251791293ba186c2c5c534d5ecfe2576
   },
   "keywords": [
     "distance-calculator",
     "shortest-distance-calculator"
   ],
   "author": "Habeeb Salami",
+<<<<<<< HEAD
   "license": "ISC"
+=======
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+>>>>>>> c5ebc973251791293ba186c2c5c534d5ecfe2576
 }
