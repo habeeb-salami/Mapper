@@ -1,13 +1,11 @@
 class Mapper {
 
-
   distance(obj1, obj2) {
     let vx = obj1.x - obj2.x;
     let vy = obj1.y - obj2.y;
     const dist = Math.sqrt(vx * vx + vy * vy);
     return dist;
   }
-
   maxMin(otherPoints) {
     this.min = otherPoints[1].distance;
     this.max = otherPoints[1].distance;
@@ -25,6 +23,5 @@ class Mapper {
       max: this.max
     };
   }
-
 }
 module.exports = Mapper;
