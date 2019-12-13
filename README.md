@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/habeeb-salami/Mapper.svg?branch=master)](https://travis-ci.org/habeeb-salami/Mapper)
-
+[![Build Status](https://travis-ci.org/habeeb-salami/Mapper.svg?branch=Mapper)](https://travis-ci.org/habeeb-salami/Mapper)
 # Mapper
 
 Mapper is class library for calculating shortest and longest distance between multiple point with their X&Y coordinates, it was meant to be part of AI in game I was developing in JavaScript which I may soon publish the source code soon.
